@@ -51,12 +51,15 @@ Our solution, "Engagement on a Shopping Platform," introduces two key features:
 - **Inclusivity**: AI caters to a wide range of body types and preferences.
 - **Reduced Returns**: Accurate recommendations decrease return rates.
 - **Higher Conversion Rates**: Improved visualization leads to more purchases.
+  
 Usage
+
 Access the application at (https://priyachandra6.github.io/Fashion-Platform-WeforShe---Myntra/).
 Use the "ADD ON ME" feature to create a personalized mannequin.
 Play the "This or That" game to choose outfits and see them on your mannequin.
 
 Contributing
+
 We welcome contributions from the community. Please follow these steps to contribute:
 
 Fork the repository.
