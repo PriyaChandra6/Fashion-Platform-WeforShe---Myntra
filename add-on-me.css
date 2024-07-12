@@ -1,4 +1,5 @@
-/* General Styles */   /* add-on-me.css */
+/* add-on-me.css */
+/* General Styles */  
 
 .container {
   max-width: 1500px;
@@ -119,5 +120,44 @@ select {
   background-color: #e8f4f8;
   border: 1px solid #ccc;
   border-radius: 10px;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    color: #007BFF; /* Icon color */
+    transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+    color: #0056b3; /* Icon color on hover */
+}
+
+#preview {
+    margin-top: 20px;
+    position: relative;
+}
+
+#preview video {
+    width: 100%;
+    max-width: 600px;
+}
+
+#preview img {
+    max-width: 100%;
+}
+
+#submitImage {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Add a gap between the switch camera and take photo buttons */
+#preview .icon-button:nth-child(1) {
+    margin-right: 20px; /* Adjust the margin as needed */
 }
 
