@@ -11,12 +11,12 @@ let elems = document.querySelectorAll(".elem");
   document.addEventListener("DOMContentLoaded", function() {
     const addOnMeBtn = document.getElementById("addOnMeBtn");
     addOnMeBtn.addEventListener("click", function() {
-        fetch("components/add-on-me.html")
+        fetch("add-on-me.html")
             .then(response => response.text())
             .then(html => {
                 document.getElementById("content").innerHTML = html;
                 const script = document.createElement("script");
-                script.src = "js/add-on-me.js";
+                script.src = "add-on-me.js";
                 document.head.appendChild(script);
             })
             .catch(error => {
@@ -27,7 +27,7 @@ let elems = document.querySelectorAll(".elem");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("thisOrThatBtn").addEventListener("click", function () {
-      loadComponent("components/this-or-that.html");
+      loadComponent("this-or-that.html");
   });
 });
 
