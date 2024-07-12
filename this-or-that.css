@@ -1,0 +1,39 @@
+
+.container {
+  padding: 20px;
+}
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.outfit {
+  text-align: center;
+}
+.choose-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.or {
+  font-size: 24px;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+#resultSection {
+  text-align: center;
+  margin-top: 20px;
+}
+#resultSection img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}

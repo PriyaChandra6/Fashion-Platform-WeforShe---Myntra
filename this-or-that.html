@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This or That - Outfit Comparison</title>
+    <link rel="stylesheet" href="css/this-or-that.css">
+</head>
+<body>
+    <h1>This or That - Outfit Comparison</h1>
+    
+    <div class="container">
+        <!-- Section for Comparing Outfits -->
+        <div id="comparisonSection" class="section">
+            <div class="outfit">
+                <h2>Outfit 1</h2>
+                <img src="images/outfit1.jpg" alt="Outfit 1" width="200px" height="200px">
+                <button class="choose-button" data-outfit="1">Choose This</button>
+            </div>
+
+            <div class="or">
+                <h2>OR</h2>
+            </div>
+
+            <div class="outfit">
+                <h2>Outfit 2</h2>
+                <img src="images/outfit2.jpg" alt="Outfit 2" width="200px" height="200px">
+                <button class="choose-button" data-outfit="2">Choose This</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultSection" class="hidden">
+        <h3>You chose:</h3>
+        <div id="chosenOutfit"></div>
+    </div>
+
+    <script src="js/this-or-that.js"></script>
+</body>
+</html>

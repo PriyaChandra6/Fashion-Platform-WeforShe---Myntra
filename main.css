@@ -1,0 +1,250 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General Styles */
+body {
+  /* font-family: Arial, sans-serif; */
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 0em 9px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+}
+ .myntra-logo {
+  margin-left: 20px;
+ }
+ul {
+  list-style: none;
+  display: flex;
+  margin: 6px;
+  padding: 1px;
+  justify-content: center;
+}
+ ul li {
+  margin: 1rem 2em;
+  margin-left: 6rem;
+  justify-items: left;
+}
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  margin-left: 2px;
+  padding: 0px;
+}
+.search {
+  flex-grow: 1;
+  margin: 0 4em;
+}
+.search input {
+  width: 85%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.icons {
+  display: flex;
+  margin: 0 2em;
+}
+.icons span {
+  width: 54px;
+  height: 24px;
+}
+main {
+  padding: 2em;
+}
+
+/* New Features Section */
+#newFeatures {
+  padding: 2em;
+    text-align: center;
+    background-color: #f0e68c;
+    border: 2px solid #6c63ff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#newFeatures h2 {
+  color: #333;
+}
+
+#newFeatures p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+#newFeatures button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#newFeatures button:hover {
+  background-color: #ff4500;
+}
+
+/* Section 2 shopping */
+
+#shop {
+ height: 100vh;
+ width: 100%;
+ background-image: url(myntra-bg.jpg);
+ color: #ffffff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  padding: 50px 20px;
+}
+
+.elem {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px; 
+}
+
+.elem .blur {
+  position: absolute;
+  width: 34%;
+  background: linear-gradient(to right, #f5e31bd7, #F5E41B, #f5e31be3);
+  box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 10px #F5E41B;
+  z-index: 8;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.elem h2 {
+  text-transform: uppercase;
+  font-size: 6.8vw;
+  font-weight: 100;
+  position: relative;
+  line-height: 5vw;
+  z-index: 9;
+  font-style: normal;
+}
+
+.elem .moving {
+  background-color: #F5E41B;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%) scaleY(0);
+  padding: 8px 0px;
+  transition: all ease 0.3s;
+  overflow: hidden;
+}
+
+.elem .moving .moving-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moving 4s linear infinite;
+}
+
+.elem .moving .moving-in h5 {
+  color: #000;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all ease 0.3s;
+  transition-delay: 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+@keyframes moving {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.elem:hover .moving {
+  transform: translate(0, -50%) scaleY(1);
+}
+
+.elem:hover .moving h5 {
+  opacity: 1;
+}
+
+.elem:hover h2 {
+  font-style: italic;
+  color: #000;
+}
+
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1em;
+}
+
+.footer-links a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-media i {
+  margin: 10px;
+  padding: 5px;
+  
+}
+
+.newsletter {
+  margin-top: 1em;
+}
+
+.newsletter input {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
