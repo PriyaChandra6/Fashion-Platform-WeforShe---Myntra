@@ -1,6 +1,4 @@
-/* add-on-me.css */
-/* General Styles */  
-
+/* General Styles */
 .container {
   max-width: 1500px;
   margin: 20px auto;
@@ -9,10 +7,45 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-wrap: wrap;    /* Allow wrapping for smaller screens */
   justify-content: space-between;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .section {
+    flex: 1 1 45%; /* Allow sections to take up more space */
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust header size */
+  }
+
+  h2 {
+    font-size: 1.2em; /* Adjust subheader size */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .section {
+    margin: 10px 0; /* Vertical margin */
+  }
+
+  .primary-button, .secondary-button, .SkipBtn {
+    width: 100%; /* Full width for buttons */
+  }
+
+  #preview img, #preview video {
+    max-width: 100%; /* Ensure media fits screen */
+  }
 }
 
 @keyframes fadeIn {
@@ -30,15 +63,16 @@
   flex: 1;
   margin-right: 20px;
   margin-left: 10px;
+  margin: 0 10px;
 }
 
-#or{
+#or {
   margin-right: 65px;
   margin-left: 30px;
   color: rgb(255, 25, 25);
 }
-.primary-button {
 
+.primary-button {
   margin: 10px;
   padding: 12px 24px;
   background-color: #6c63ff;
@@ -114,6 +148,10 @@ select {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 #mannequin {
   margin-top: 20px;
   padding: 20px;
@@ -122,42 +160,105 @@ select {
   border-radius: 10px;
 }
 
-.icon-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
-    padding: 10px;
-    font-size: 30px;
-    color: #007BFF; /* Icon color */
-    transition: color 0.3s ease;
-}
-
-.icon-button:hover {
-    color: #0056b3; /* Icon color on hover */
-}
-
 #preview {
-    margin-top: 20px;
-    position: relative;
+  margin-top: 20px;
+  position: relative;
 }
 
 #preview video {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 #preview img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 #submitImage {
-    display: none;
-    margin-top: 10px;
+  display: none;
+  margin-top: 10px;
 }
-
 /* Add a gap between the switch camera and take photo buttons */
 #preview .icon-button:nth-child(1) {
-    margin-right: 20px; /* Adjust the margin as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  color: #007BFF; /* Icon color */
+  transition: color 0.3s ease;
 }
 
+.icon-button:hover {
+  color: #0056b3; /* Icon color on hover */
+}
+
+#compareOutfitsButton {
+  display: none;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+#compareOutfitsButton:hover {
+  background-color: #2980b9;
+}
+#outfitComparisonSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.outfit {
+  text-align: center;
+}
+
+.outfit img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.view-full-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-full-button:hover {
+  background-color: #c0392b;
+}
+
+.SkipBtn{
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.SkipBtn:hover {
+  background-color: #27ae60;
+}
+/* Additional Styles for Buttons */
+.primary-button, .secondary-button, .SkipBtn {
+  padding: 12px; /* Adjust padding */
+  font-size: 1em; /* Responsive font size */
+}
+
+/* Responsive Icon Button */
+.icon-button {
+  font-size: 24px; /* Smaller icon size for mobile */
+}
