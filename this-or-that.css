@@ -10,9 +10,10 @@
 }
 .outfit {
   text-align: center;
+  color: rgb(245, 50, 89);
 }
 .choose-button {
-  background-color: #007bff;
+  background-color: rgb(223, 20, 60);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -20,9 +21,13 @@
   border-radius: 5px;
   margin-top: 10px;
 }
+.choose-button:hover {
+  background-color:  rgb(248, 37, 80);
+}
 .or {
   font-size: 24px;
   font-weight: bold;
+  color: coral;
 }
 .hidden {
   display: none;
@@ -36,4 +41,16 @@
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+}
+.SkipBtn{
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 560px;
+}
+.SkipBtn:hover {
+  background-color: #27ae60;
 }
