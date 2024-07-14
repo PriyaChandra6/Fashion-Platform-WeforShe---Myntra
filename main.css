@@ -9,7 +9,6 @@
 
 /* General Styles */
 body {
-  /* font-family: Arial, sans-serif; */
   color: #333;
   background-color: #f8f8f8;
 }
@@ -17,7 +16,7 @@ body {
 header {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-  padding: 0em 9px;
+  padding: 0.5em 1em;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -50,10 +49,10 @@ ul li a {
 }
 .search {
   flex-grow: 1;
-  margin: 0 4em;
+  margin: 0 1em;
 }
 .search input {
-  width: 85%;
+  width: 100%;
   padding: 0.5em;
   font-size: 1em;
   border: 1px solid #ccc;
@@ -61,7 +60,7 @@ ul li a {
 }
 .icons {
   display: flex;
-  margin: 0 2em;
+  margin: 0 1em;
 }
 .icons span {
   width: 54px;
@@ -73,21 +72,24 @@ main {
 
 /* New Features Section */
 #newFeatures {
-  padding: 2em;
+    padding: 2em;
     text-align: center;
     background-color: #f0e68c;
     border: 2px solid #6c63ff; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 2em 0; 
 }
 
 #newFeatures h2 {
   color: #333;
+  margin-bottom: 1em;
 }
 
 #newFeatures p {
   font-size: 1.2em;
   color: #666;
+  margin-bottom: 1em;
 }
 
 #newFeatures button {
@@ -108,10 +110,10 @@ main {
 /* Section 2 shopping */
 
 #shop {
- height: 100vh;
- width: 100%;
- background-image: url(myntra-bg.jpg);
- color: #ffffff; 
+  height: 100vh;
+  width: 100%;
+  background-image: url(myntra-bg.jpg);
+  color: #ffffff; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +205,6 @@ main {
   color: #000;
 }
 
-
 footer {
   background-color: #fff;
   border-top: 1px solid #ccc;
@@ -247,4 +248,85 @@ footer {
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
+}
+
+/* Responsive Design */
+
+/* Mobile View */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .search {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  .icons {
+    margin: 1em 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  #shop {
+    padding: 20px 10px;
+  }
+  .elem h2 {
+    font-size: 10vw; /* Larger font size for better readability on small screens */
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media i {
+    margin: 5px;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+}
+/* Tablet and Laptop View */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 1em 2em; /* Adjusted padding for better spacing */
+  }
+
+  .search {
+    margin: 0 2em; /* Adjusted margin for better spacing */
+  }
+
+  .icons {
+    margin: 0 1em; /* Adjusted margin for better spacing */
+  }
+
+  main {
+    padding: 1.5em;
+  }
+
+  #shop {
+    padding: 40px 20px;
+  }
+
+  .elem h2 {
+    font-size: 8vw; /* Adjusted font size for better readability on medium screens */
+  }
 }
