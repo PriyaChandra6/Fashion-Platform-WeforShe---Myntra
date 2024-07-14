@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(html => {
                 document.getElementById("content").innerHTML = html;
                 const script = document.createElement("script");
-                script.src = "js/add-on-me.js";
+                script.src = "add-on-me.js";
                 document.head.appendChild(script);
             })
             .catch(error => {
