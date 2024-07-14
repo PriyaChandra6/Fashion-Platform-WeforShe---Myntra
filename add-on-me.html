@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +6,32 @@
     <title>Add On Me - Outfit Recommendation</title>
     <link rel="stylesheet" href="add-on-me.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <h1>Add On Me - Outfit Recommendation</h1>
     
     <div class="container">
-       <!-- Section for Image Source Selection -->
-       <div id="imageSourceSection" class="section">
-        <h2>Choose Image Source</h2>
-        <button id="uploadOption" class="primary-button">Upload from Gallery</button>
-        <button id="cameraOption" class="primary-button">Use Camera</button>
-        <input type="file" id="imageInput" style="display: none;" accept="image/*">
-        <div id="preview"></div>
-        <button id="submitImage" class="secondary-button" style="display: none;">Submit Image</button>
-    </div>
+        <div id="imageSourceSection" class="section">
+            <h2>Choose Image Source</h2>
+            <button id="uploadOption" class="primary-button">Upload from Gallery</button>
+            <button id="cameraOption" class="primary-button">Use Camera</button>
+            <input type="file" id="imageInput" style="display: none;" accept="image/*">
+            <div id="preview"></div>
+            <button id="submitImage" class="secondary-button" style="display: none;">Submit Image</button>
+        </div>
+
         <h2 id="or">OR</h2>
-        <!-- Section for Answering Questions -->
+
         <div id="questionSection" class="section">
+            
             <h2>Answer Questions for Outfit Recommendation</h2>
+
             <button id="answerQuestions" class="primary-button">Answer Questions</button>
+
             <div id="questions" style="display: none;">
+
                 <div class="question">
                     <label for="gender">Select Gender:</label>
                     <select id="gender">
@@ -38,7 +42,7 @@
                     </select>
                 </div>
 
-                <div class="question">
+               <div class="question">
                     <label for="bodyType">Select Body Type:</label>
                     <select id="bodyType">
                         <option value="slim">Slim</option>
@@ -46,52 +50,227 @@
                         <option value="athletic">Athletic</option>
                         <option value="curvy">Curvy</option>
                         <option value="plusSize">Plus Size</option>
-                    </select>
+                        <option value="petite">Petite</option>
+                        <option value="tall">Tall</option>
+                        <option value="muscular">Muscular</option>
+                        <option value="pear">Pear</option>
+                        <option value="hourglass">Hourglass</option>
+                        <option value="rectangle">Rectangle</option>
+                        <option value="inverted_triangle">Inverted Triangle</option>
+                     </select>
+               </div>
+
+               <div class="question">
+                <label for="complexion">Select Complexion:</label>
+                <select id="complexion">
+                   <option value="fair">Fair</option>
+                   <option value="medium">Medium</option>
+                   <option value="dark">Dark</option>
+                   <option value="very_fair">Very Fair</option>
+                   <option value="light">Light</option>
+                   <option value="olive">Olive</option>
+                   <option value="tan">Tan</option>
+                   <option value="deep">Deep</option>
+                   <option value="ebony">Ebony</option>
+                 </select>
                 </div>
 
                 <div class="question">
-                    <label for="complexion">Select Complexion:</label>
-                    <select id="complexion">
-                        <option value="fair">Fair</option>
-                        <option value="medium">Medium</option>
-                        <option value="olive">Olive</option>
-                        <option value="dark">Dark</option>
-                    </select>
-                </div>
-
-                <div class="question">
-                    <label for="style">Preferred Style:</label>
+                    <label for="style">Select Style:</label>
                     <select id="style">
-                        <option value="casual">Casual</option>
-                        <option value="formal">Formal</option>
-                        <option value="sporty">Sporty</option>
-                        <option value="bohemian">Bohemian</option>
-                        <option value="vintage">Vintage</option>
+                       <option value="casual">Casual</option>
+                       <option value="formal">Formal</option>
+                       <option value="sporty">Sporty</option>
+                       <option value="ethnic">Ethnic</option>
+                       <option value="business">Business</option>
+                       <option value="vintage">Vintage</option>
+                       <option value="bohemian">Bohemian</option>
+    <option value="streetwear">Streetwear</option>
+    <option value="preppy">Preppy</option>
+    <option value="punk">Punk</option>
+    <option value="grunge">Grunge</option>
+    <option value="goth">Goth</option>
+    <option value="hipster">Hipster</option>
+    <option value="chic">Chic</option>
+    <option value="classic">Classic</option>
+    <option value="edgy">Edgy</option>
+    <option value="retro">Retro</option>
+    <option value="luxury">Luxury</option>
+    <option value="minimalist">Minimalist</option>
+    <option value="athleisure">Athleisure</option>
                     </select>
                 </div>
 
                 <div class="question">
-                    <label for="occasion">Preferred Occasion:</label>
+                    <label for="occasion">Select Occasion:</label>
                     <select id="occasion">
-                        <option value="everyday">Everyday Wear</option>
-                        <option value="office">Office Wear</option>
-                        <option value="party">Party</option>
-                        <option value="date">Date Night</option>
-                        <option value="formalEvent">Formal Event</option>
+                      <option value="everyday">Everyday</option>
+                      <option value="party">Party</option>
+                      <option value="wedding">Wedding</option>
+                      <option value="office">Office</option>
+                      <option value="casual">Casual</option>
+                      <option value="formal">Formal</option>
+                      <option value="sports">Sports</option>
+                      <option value="beach">Beach</option>
+                      <option value="vacation">Vacation</option>
+                      <option value="date">Date</option>
+                      <option value="business">Business</option>
+                      <option value="festival">Festival</option>
+                      <option value="dinner">Dinner</option>
+                      <option value="concert">Concert</option>
+                      <option value="interview">Interview</option>
+                      <option value="gym">Gym</option>
+                      <option value="nightout">Night Out</option>
+                      <option value="holiday">Holiday</option>
+                      <option value="family">Family Gathering</option>
+                      <option value="relaxation">Relaxation</option>
                     </select>
-                </div>
+                  </div>
+                  
 
                 <div class="question">
-                    <label for="colors">Preferred Colors:</label>
+                    <label for="colors">Select Colors:</label>
                     <select id="colors" multiple>
-                        <option value="black">Black</option>
-                        <option value="white">White</option>
-                        <option value="blue">Blue</option>
-                        <option value="red">Red</option>
-                        <option value="green">Green</option>
-                        <option value="yellow">Yellow</option>
-                        <option value="pink">Pink</option>
-                        <option value="purple">Purple</option>
+                              <option value="red">Red</option>
+                              <option value="blue">Blue</option>
+                              <option value="green">Green</option>
+                              <option value="yellow">Yellow</option>
+                              <option value="orange">Orange</option>
+                              <option value="purple">Purple</option>
+                              <option value="pink">Pink</option>
+                              <option value="brown">Brown</option>
+                              <option value="black">Black</option>
+                              <option value="white">White</option>
+                              <option value="gray">Gray</option>
+                              <option value="violet">Violet</option>
+                              <option value="indigo">Indigo</option>
+                              <option value="lightcoral">Light Coral</option>
+                              <option value="lightblue">Light Blue</option>
+                              <option value="lightgreen">Light Green</option>
+                              <option value="lightyellow">Light Yellow</option>
+                              <option value="lightorange">Light Orange</option>
+                              <option value="lightpurple">Light Purple</option>
+                              <option value="lightpink">Light Pink</option>
+                              <option value="lightbrown">Light Brown</option>
+                              <option value="lightgray">Light Gray</option>
+                              <option value="lightviolet">Light Violet</option>
+                              <option value="lightindigo">Light Indigo</option>
+                              <option value="aqua">Aqua</option>
+                              <option value="aquamarine">Aquamarine</option>
+                              <option value="azure">Azure</option>
+                              <option value="beige">Beige</option>
+                              <option value="bisque">Bisque</option>
+                              <option value="blueviolet">Blue Violet</option>
+                              <option value="burlywood">Burly Wood</option>
+                              <option value="cadetblue">Cadet Blue</option>
+                              <option value="chartreuse">Chartreuse</option>
+                              <option value="chocolate">Chocolate</option>
+                              <option value="coral">Coral</option>
+                              <option value="cornflowerblue">Cornflower Blue</option>
+                              <option value="crimson">Crimson</option>
+                              <option value="cyan">Cyan</option>
+                              <option value="darkblue">Dark Blue</option>
+                              <option value="darkcyan">Dark Cyan</option>
+                              <option value="darkgoldenrod">Dark Goldenrod</option>
+                              <option value="darkgray">Dark Gray</option>
+                              <option value="darkgreen">Dark Green</option>
+                              <option value="darkkhaki">Dark Khaki</option>
+                              <option value="darkmagenta">Dark Magenta</option>
+                              <option value="darkolivegreen">Dark Olive Green</option>
+                              <option value="darkorange">Dark Orange</option>
+                              <option value="darkorchid">Dark Orchid</option>
+                              <option value="darkred">Dark Red</option>
+                              <option value="darksalmon">Dark Salmon</option>
+                              <option value="darkseagreen">Dark Sea Green</option>
+                              <option value="darkslateblue">Dark Slate Blue</option>
+                              <option value="darkslategray">Dark Slate Gray</option>
+                              <option value="darkturquoise">Dark Turquoise</option>
+                              <option value="darkviolet">Dark Violet</option>
+                              <option value="deeppink">Deep Pink</option>
+                              <option value="deepskyblue">Deep Sky Blue</option>
+                              <option value="dimgray">Dim Gray</option>
+                              <option value="dodgerblue">Dodger Blue</option>
+                              <option value="firebrick">Firebrick</option>
+                              <option value="floralwhite">Floral White</option>
+                              <option value="forestgreen">Forest Green</option>
+                              <option value="fuchsia">Fuchsia</option>
+                              <option value="gainsboro">Gainsboro</option>
+                              <option value="ghostwhite">Ghost White</option>
+                              <option value="gold">Gold</option>
+                              <option value="goldenrod">Goldenrod</option>
+                              <option value="greenyellow">Green Yellow</option>
+                              <option value="honeydew">Honeydew</option>
+                              <option value="hotpink">Hot Pink</option>
+                              <option value="indianred">Indian Red</option>
+                              <option value="ivory">Ivory</option>
+                              <option value="khaki">Khaki</option>
+                              <option value="lavender">Lavender</option>
+                              <option value="lavenderblush">Lavender Blush</option>
+                              <option value="lawngreen">Lawn Green</option>
+                              <option value="lemonchiffon">Lemon Chiffon</option>
+                              <option value="lightgoldenrodyellow">Light Goldenrod Yellow</option>
+                              <option value="lightseagreen">Light Sea Green</option>
+                              <option value="lightskyblue">Light Sky Blue</option>
+                              <option value="lightslategray">Light Slate Gray</option>
+                              <option value="lightsteelblue">Light Steel Blue</option>
+                              <option value="lime">Lime</option>
+                              <option value="limegreen">Lime Green</option>
+                              <option value="linen">Linen</option>
+                              <option value="magenta">Magenta</option>
+                              <option value="maroon">Maroon</option>
+                              <option value="mediumaquamarine">Medium Aquamarine</option>
+                              <option value="mediumblue">Medium Blue</option>
+                              <option value="mediumorchid">Medium Orchid</option>
+                              <option value="mediumpurple">Medium Purple</option>
+                              <option value="mediumseagreen">Medium Sea Green</option>
+                              <option value="mediumslateblue">Medium Slate Blue</option>
+                              <option value="mediumspringgreen">Medium Spring Green</option>
+                              <option value="mediumturquoise">Medium Turquoise</option>
+                              <option value="mediumvioletred">Medium Violet Red</option>
+                              <option value="midnightblue">Midnight Blue</option>
+                              <option value="mintcream">Mint Cream</option>
+                              <option value="mistyrose">Misty Rose</option>
+                              <option value="moccasin">Moccasin</option>
+                              <option value="navajowhite">Navajo White</option>
+                              <option value="navy">Navy</option>
+                              <option value="oldlace">Old Lace</option>
+                              <option value="olive">Olive</option>
+                              <option value="olivedrab">Olive Drab</option>
+                              <option value="orangered">Orange Red</option>
+                              <option value="orchid">Orchid</option>
+                              <option value="palegoldenrod">Pale Goldenrod</option>
+                              <option value="palegreen">Pale Green</option>
+                              <option value="paleturquoise">Pale Turquoise</option>
+                              <option value="palevioletred">Pale Violet Red</option>
+                              <option value="papayawhip">Papaya Whip</option>
+                              <option value="peachpuff">Peach Puff</option>
+                              <option value="peru">Peru</option>
+                              <option value="plum">Plum</option>
+                              <option value="powderblue">Powder Blue</option>
+                              <option value="rebeccapurple">Rebecca Purple</option>
+                              <option value="rosybrown">Rosy Brown</option>
+                              <option value="royalblue">Royal Blue</option>
+                              <option value="saddlebrown">Saddle Brown</option>
+                              <option value="salmon">Salmon</option>
+                              <option value="sandybrown">Sandy Brown</option>
+                              <option value="seagreen">Sea Green</option>
+                              <option value="seashell">Seashell</option>
+                              <option value="sienna">Sienna</option>
+                              <option value="silver">Silver</option>
+                              <option value="skyblue">Sky Blue</option>
+                              <option value="slateblue">Slate Blue</option>
+                              <option value="slategray">Slate Gray</option>
+                              <option value="snow">Snow</option>
+                              <option value="springgreen">Spring Green</option>
+                              <option value="steelblue">Steel Blue</option>
+                              <option value="tan">Tan</option>
+                              <option value="teal">Teal</option>
+                              <option value="thistle">Thistle</option>
+                              <option value="tomato">Tomato</option>
+                              <option value="turquoise">Turquoise</option>
+                              <option value="wheat">Wheat</option>
+                              <option value="whitesmoke">White Smoke</option>
+                              <option value="yellowgreen">Yellow Green</option>        
                     </select>
                 </div>
 
@@ -104,9 +283,13 @@
         <div id="resultSection" class="hidden">
             <h3>Your Personalized Mannequin:</h3>
             <div id="mannequin"></div>
+            <button id="compareOutfitsButton" class="compare-button" style="display: none;">Compare Outfits</button>
         </div>
+    </div>
+
+    <div id="outfitComparisonSection" class="hidden">
     </div>
 
     <script src="add-on-me.js"></script>
 </body>
-</html>
+    </html>
