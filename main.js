@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add On Me button functionality
     const addOnMeBtn = document.getElementById("addOnMeBtn");
     addOnMeBtn.addEventListener("click", function() {
-        fetch("components/add-on-me.html")
+        fetch("add-on-me.html")
             .then(response => response.text())
             .then(html => {
                 document.getElementById("content").innerHTML = html;
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Existing This or That button functionality on the homepage remains unchanged
     document.getElementById("thisOrThatBtn").addEventListener("click", function() {
-        loadComponent("components/this-or-that.html");
+        loadComponent("this-or-that.html");
     });
 });
 
