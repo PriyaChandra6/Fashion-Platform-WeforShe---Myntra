@@ -1,6 +1,6 @@
 # Tech Triumvirate - We For She Hackathon Project
 
-Welcome to the GitHub repository for Tech Triumvirate's solution for the We For She Hackathon by Myntra. Our project focuses on enhancing user engagement on shopping platforms through personalized fashion recommendations and interactive features.
+Welcome to the GitHub repository of Tech Triumvirate's solution for the We For She Hackathon by Myntra. Our project focuses on enhancing user engagement on shopping platforms through personalized fashion recommendations and interactive features.
 
 ## Project Overview
 Access the application at (https://priyachandra6.github.io/Fashion-Platform-WeforShe---Myntra/)
@@ -63,14 +63,18 @@ Contributing
 We welcome contributions from the community. Please follow these steps to contribute:
 
 Fork the repository.
-Create a new branch
-Make your changes and commit them
-Push to the branch
+
+Create a new branch.
+
+Make your changes and commit them.
+
+Push to the branch.
+
 Open a pull request.
 
 Contact
 For any inquiries, please contact us at:
 
-Priya Chandra (Team Leader) - priyac.ug22.ec@nitp.ac.in.com
-Praneetha Kilaparthi - praneetha@example.com
-Revathi Chamala - revathi@example.com
+Priya Chandra - priyac.ug22.ec@nitp.ac.in
+Praneetha Kilaparthi - kilaparthip.dd22.ec@nitp.ac.in
+Revathi Chamala - revathichamala@gmail.com
